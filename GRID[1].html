@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+
+<body>
+    <div class="header flL">
+        <h2>TestdirectTVZCA</h2>
+        <h3>Last Updated: 08/19/2020 15:31:57 MT</h3>
+    </div>
+    <div class="flL w100">
+        <div class="flL">
+            <h4 class="mrgtb10">Filters</h4>
+
+            <div>
+                <div class="flL pdR30">
+                    <p class="f11 mrgtb5">Only Errors schedule files</p>
+                    <label class="label">
+                        <div class="toggle">
+                            <input class="toggle-state" type="checkbox" name="check" value="check" />
+                            <div class="indicator"></div>
+                        </div>
+
+                    </label>
+                </div>
+                <div class="flL pdR30">
+                    <p class="f11 mrgtb5">Only Incoming schedule files</p>
+                    <label class="label">
+                        <div class="toggle">
+                            <input class="toggle-state" type="checkbox" name="check" value="check" />
+                            <div class="indicator"></div>
+                        </div>
+
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="flR">
+            <table class="legend">
+                <h4 class="mrgtb10">Legend</h4>
+
+                <tr>
+                    <td><div class="red"></div></td>
+                    <td>
+
+                        Mismatch in Database or todays file is missing
+                    </td>
+                </tr>
+                <tr>
+                    <td><div class="amber"></div></td>
+                    <td>Missing schedule file. a day or more in the future </td>
+                </tr>
+                <tr>
+                    <td><div class="green"></div></td>
+                    <td>Current day</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="mainpanel flL w100">
+        <button class="accordion"><i class="fa fa-chevron-down rotate-icon arrow"></i>CHG</button>
+        <div class="panel animated">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Schedule file</th>
+                    <th>DB Load</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>08/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <button class="accordion"><i class="fa fa-chevron-down rotate-icon arrow"></i>LAX</button>
+        <div class="panel animated">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Schedule file</th>
+                    <th>DB Load</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>08/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <button class="accordion"><i class="fa fa-chevron-down rotate-icon arrow"></i>NYC</button>
+        <div class="panel animated">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Schedule file</th>
+                    <th>DB Load</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>09/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+                <tr>
+                    <td>08/17/2020</td>
+                    <td>4416</td>
+                    <td>0</td>
+                    <td>2146546572634645873496705486058fhgfjgdfg</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
